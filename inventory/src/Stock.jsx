@@ -66,7 +66,7 @@ function Stock() {
   };
 
   const updateProduct = async () => {
-    await fetch(`http://localhost:5000/api/products/${editId}`, {
+    await fetch(`http://ivmproject.onrender.com/api/products/${editId}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -94,7 +94,7 @@ function Stock() {
 
     if (!confirmDelete) return;
 
-    await fetch(`http://localhost:5000/api/products/${id}`, {
+    await fetch(`http://ivmproject.onrender.com/api/products/${id}`, {
       method: "DELETE",
     });
 

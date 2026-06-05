@@ -8,7 +8,7 @@ function Profile({ user }) {
   const handleChangePassword = async (e) => {
     e.preventDefault();
 
-    const res = await axios.put("http://localhost:5000/api/change-password", {
+    const res = await axios.put("http://ivmproject.onrender.com/api/change-password", {
       email: user.email,
       oldPassword,
       newPassword,
