@@ -10,7 +10,7 @@ function Inventory() {
   }, []);
 const exportInventory = () => {
   window.open(
-    "http://ivmproject.onrender.com/api/export"
+    "http://localhost:5000/api/export"
   );
 };
   return (
