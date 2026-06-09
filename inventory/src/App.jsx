@@ -5,7 +5,7 @@ import AdminDashboard from "./AdminDashboard";
 import Inventory from "./Inventory";
 import Stock from "./Stock";
 import Low from "./Low";
-import Login from "./login";
+import Login from "./Login";
 import History from "./History";
 import {BrowserRouter,Routes,Route,Link,Navigate,NavLink ,} from "react-router-dom";
 
