@@ -4,7 +4,7 @@ function Low() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://ivmproject-1.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => {
         const lowProducts = data.filter(

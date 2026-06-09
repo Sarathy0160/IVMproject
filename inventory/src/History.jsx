@@ -5,7 +5,7 @@ function History() {
   const [selectedDetails, setSelectedDetails] = useState("");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/history")
+    fetch("https://ivmproject-1.onrender.com/api/history")
       .then((res) => res.json())
       .then((data) => setHistory(data))
       .catch(() => setHistory([])); // safety fallback

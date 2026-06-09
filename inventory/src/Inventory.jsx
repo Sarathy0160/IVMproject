@@ -4,13 +4,13 @@ function Inventory() {
   const [products, setProducts] = useState([]);
   const [brand, setBrand] = useState("");
   useEffect(() => {
-    fetch("http://localhost:5000/api/products")
+    fetch("https://ivmproject-1.onrender.com/api/products")
       .then((res) => res.json())
       .then((data) => setProducts(data));
   }, []);
 const exportInventory = () => {
   window.open(
-    "http://localhost:5000/api/export"
+    "https://ivmproject-1.onrender.com/api/export"
   );
 };
   return (
